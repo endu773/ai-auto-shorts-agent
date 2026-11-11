@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Auto Shorts Agent</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main class="wrap">
+<header>
+<div class="logo">✂</div>
+<div>
+<h1>AI Auto Shorts</h1>
+<p>Turn long videos into vertical shorts automatically</p>
+</div>
+</header>
+<section class="panel">
+<h2>Upload a long video</h2>
+<form id="form">
+<label class="drop" for="video">
+<span class="upload">⬆</span>
+<b id="fileLabel">Choose video file</b>
+<small>MP4 · MOV · MKV · WEBM</small>
+</label>
+<input id="video" name="video" type="file" accept="video/*" required>
+<div class="grid">
+<label>Short duration
+<select name="clip_seconds">
+<option value="30">30 seconds</option>
+<option value="45" selected>45 seconds</option>
+<option value="60">60 seconds</option>
+<option value="90">90 seconds</option>
+</select>
+</label>
+<label>Number of Shorts
+<select name="max_clips">
+<option>3</option>
+<option selected>5</option>
+<option>8</option>
+<option>10</option>
+<option>15</option>
+</select>
+</label>
+</div>
+<button id="submit">Create Shorts automatically</button>
+</form>
+</section>
+<section class="panel hidden" id="progress">
+<h2>Processing video</h2>
+<div class="bar"><i id="bar"></i></div>
+<p id="status">Uploading…</p>
+<div id="results"></div>
+</section>
+<footer>AI Auto Shorts Agent · Upload only videos you have permission to use.</footer>
+</main>
+<script src="/static/app.js"></script>
+</body>
+  </html>
+  
