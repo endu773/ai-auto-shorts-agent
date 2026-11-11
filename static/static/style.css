@@ -1,0 +1,150 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b1020;
+  color: #eef2ff;
+  font-family: Arial, sans-serif;
+}
+
+.wrap {
+  max-width: 760px;
+  margin: 36px auto;
+  padding: 0 18px;
+}
+
+header {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: #7257ff;
+  display: grid;
+  place-items: center;
+  font-size: 27px;
+}
+
+h1 {
+  font-size: 27px;
+  margin: 0;
+}
+
+header p, small, footer {
+  color: #9aa5c4;
+}
+
+.panel {
+  background: #151d33;
+  border: 1px solid #293451;
+  border-radius: 20px;
+  padding: 24px;
+  margin: 18px 0;
+}
+
+.drop {
+  border: 2px dashed #536184;
+  border-radius: 16px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.upload {
+  font-size: 30px;
+  color: #a99bff;
+}
+
+input[type=file] {
+  display: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #c9d2e9;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  margin-top: 8px;
+  border-radius: 10px;
+  background: #0c1428;
+  color: white;
+  border: 1px solid #3a4868;
+}
+
+button {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  padding: 16px;
+  background: #795dff;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.bar {
+  height: 10px;
+  background: #293451;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.bar i {
+  display: block;
+  height: 100%;
+  width: 8%;
+  background: #8c78ff;
+}
+
+.clip {
+  padding: 14px;
+  margin: 12px 0;
+  background: #0e172b;
+  border: 1px solid #293451;
+  border-radius: 12px;
+}
+
+.clip a {
+  color: #b7aaff;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin: 28px 0;
+}
+
+@media(max-width:520px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
